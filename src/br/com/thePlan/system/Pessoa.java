@@ -10,6 +10,7 @@ public class Pessoa {
 	private ArrayList<Endereco> endereco;
 	private int cpf;
 	private int rg;
+	private Data dataCad;
 
 	public Pessoa() {
 		this.nome = "";
