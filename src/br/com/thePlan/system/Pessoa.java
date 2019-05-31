@@ -6,6 +6,7 @@ public class Pessoa {
 	private String nome;
 	private Data dataNacimento;
 	private String sexo;
+	private int idade;
 	private ArrayList<Telefone> telefone;
 	private ArrayList<Endereco> endereco;
 	private int cpf;
@@ -22,11 +23,12 @@ public class Pessoa {
 		this.rg = 0;
 	}
 
-	public Pessoa(String nome, Data dataNacimento, String sexo, ArrayList<Telefone> telefone,
+	public Pessoa(String nome, Data dataNacimento, String sexo,int idade, ArrayList<Telefone> telefone,
 			ArrayList<Endereco> endereco, int cpf, int rg) {
 		this.nome = nome;
 		this.dataNacimento = dataNacimento;
 		this.sexo = sexo;
+		this.idade = idade;
 		this.telefone = telefone;
 		this.endereco = endereco;
 		this.cpf = cpf;
@@ -55,6 +57,12 @@ public class Pessoa {
 
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
+	}
+	public String getIdade(){
+		return idade;
+	}
+	public void setIdade(int idade){
+		this.idade =idade;
 	}
 
 	public ArrayList<Telefone> getTelefone() {
@@ -90,7 +98,7 @@ public class Pessoa {
 	}
 	
 	public String toString() {
-		return "Pessoa [nome=" + nome + ", dataNacimento=" + dataNacimento + ", sexo=" + sexo + ", telefone=" + telefone
+		return "Pessoa [nome=" + nome + ", dataNacimento=" + dataNacimento + ", sexo=" + sexo + ", idade=" + idade + ", telefone=" + telefone
 				+ ", endereco=" + endereco + ", cpf=" + cpf + ", rg=" + rg + "]";
 	}
 
